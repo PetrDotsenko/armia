@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Армия25</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header-navigation">
+          <div class="header-menu-wrapper">
+            <div class="header-navigation-logoblock">
+              <a href="#" class="header-navigation-link"
+                ><img src="./images/logo.svg" alt="Логотип"
+              /></a>
+              <button class="header-navigation-catalog" id="catalogButton">
+                Каталог
+              </button>
+            </div>
+            <div class="catalog-menu" id="catalogMenu">
+              <ul>
+                <li>
+                  <a href="#" class="header-catalog-link" target="_blank"
+                    >Обувь</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="header-catalog-link" target="_blank"
+                    >Брюки</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="header-catalog-link" target="_blank"
+                    >Военная форма</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="header-catalog-link" target="_blank"
+                    >Головные уборы</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="header-catalog-link" target="_blank"
+                    >Костюмы для охоты и рыбалки</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="header-catalog-link" target="_blank"
+                    >Спецодежда</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="header-catalog-link" target="_blank"
+                    >Снаряжение</a
+                  >
+                </li>
+                <li class="header-catalog-more-listitem">
+                  <a
+                    href="#"
+                    class="header-catalog-more arrow-right"
+                    target="_blank"
+                    >Смотреть весь каталог</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <ul class="header-navigation-list">
+              <li>
+                <a href="#" class="header-navigation-link" target="_blank"
+                  >О компании</a
+                >
+              </li>
+              <li>
+                <a href="#" class="header-navigation-link updown-menu"
+                  >Клиентам</a
+                >
+              </li>
+              <li class="for-margin">
+                <a href="#" class="header-navigation-link" target="_blank"
+                  >Контакты</a
+                >
+              </li>
+              <li>
+                <a href="#" class="header-navigation-link updown-menu">Ещё</a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="header-navigation-buttons">
+            <li>
+              <button class="header-navigation-button">
+                <img src="./images/search-icon.svg" alt="Поиск" />
+              </button>
+            </li>
+            <li>
+              <button class="header-navigation-button">
+                <img src="./images/basket-icon.svg" alt="Корзина" />
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-contacts">
+          <p class="header-address">г.Артём г.Владивосток</p>
+          <address>
+            <a href="tel:+79143324999" class="header-contacts-number"
+              >+7 (914) 332-49-99</a
+            >
+          </address>
+        </div>
+        <section class="header-textblock">
+          <h1 class="header-textblock-title">
+            Интернет-магазин спецодежды и снаряжения
+          </h1>
+          <p class="header-textblock-text">
+            Военная экипировка<br />и спецодежда для любых задач
+          </p>
+        </section>
+      </div>
+    </header>
+    <main class="main-content">
+      <section class="offers">
+        <div class="offers-container">
+          <div class="slider">
+            <div class="slider-wrapper">
+              <div class="slide">
+                <div class="news-slider-content">
+                  <span class="news-slider-tag">Новости</span>
+                  <h3 class="news-slider-title">Новое поступление обуви</h3>
+                </div>
+                <img src="./images/slider-offers.jpg" alt="Slide 1" class="offers-slider-img"/>
+              </div>
+              <div class="slide">
+                <div class="news-slider-content">
+                  <span class="news-slider-tag">Новости</span>
+                  <h3 class="news-slider-title">Новое поступление обуви</h3>
+                </div>
+                <img src="./images/slider-offers.jpg" alt="Slide 2" class="offers-slider-img" />
+              </div>
+              <div class="slide">
+                <div class="news-slider-content">
+                  <span class="news-slider-tag">Новости</span>
+                  <h3 class="news-slider-title">Новое поступление обуви</h3>
+                </div>
+                <img src="./images/slider-offers.jpg" alt="Slide 3" class="offers-slider-img" />
+              </div>
+            </div>
+            <div class="news-slider-buttons">
+              <button class="slider-prev"></button>
+              <button class="slider-next"></button>
+            </div>
+            <div class="slider-indicators"></div>
+          </div>
+          <div class="form-container">
+            <h2 class="form-container-title">
+              Нужен полный комплект экипировки?
+            </h2>
+            <p class="form-container-text">
+              Оставьте заявку и наш менеджер поможет подобрать оптимальный
+              комплект
+            </p>
+            <form class="order-form">
+              <div class="form-wrapper">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Имя"
+                  required
+                  class="form-lead"
+                />
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Телефон"
+                  required
+                  class="form-lead"
+                />
+              </div>
+              <textarea
+                name="comment"
+                placeholder="Комментарий к заказу"
+                class="form-text"
+              ></textarea>
+              <div class="radio-group">
+                <label>
+                  <input type="radio" name="contact_method" value="whatsapp" />
+                  <span>Связаться в WhatsApp</span>
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    name="contact_method"
+                    value="call"
+                    checked
+                  />
+                  <span>Позвонить</span>
+                </label>
+              </div>
+
+              <button type="submit" id="submit-button" class="contact-form-btn">
+                Оставить заявку
+              </button>
+
+              <label class="policy-label">
+                <input
+                  type="checkbox"
+                  name="policy"
+                  id="policy-checkbox"
+                  required
+                />
+                <span
+                  >Нажимая на кнопку «Отправить заявку», вы соглашаетесь с
+                  <a href="#" class="policy-label-link"
+                    >политикой конфиденциальности</a
+                  >
+                </span>
+              </label>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="popular-categories">
+        <div class="popular-categories-header">
+          <h2 class="catalog-section-title">Популярные категории</h2>
+          <a href="#" class="categories-catalog-more">Смотреть весь каталог</a>
+        </div>
+        <div class="popular-categories-slider">
+          <div class="popular-category">
+            <a href="#" class="popular-category-link" target="_blank">
+              <img
+                src="./images/military-wear.png"
+                alt="Военная форма"
+                class="popular-category-image"
+              />
+              <span>Военная форма</span>
+            </a>
+          </div>
+          <div class="popular-category">
+            <a href="#" class="popular-category-link" target="_blank">
+              <img
+                src="./images/trousers.png"
+                alt="Брюки"
+                class="popular-category-image"
+              />
+              <span>Брюки</span>
+            </a>
+          </div>
+          <div class="popular-category">
+            <a href="#" class="popular-category-link" target="_blank">
+              <img
+                src="./images/headdress.png"
+                alt="Головные уборы"
+                class="popular-category-image"
+              />
+              <span>Головные уборы</span>
+            </a>
+          </div>
+          <div class="popular-category">
+            <a href="#" class="popular-category-link" target="_blank">
+              <img
+                src="./images/home.png"
+                alt="Для дома и быта"
+                class="popular-category-image"
+              />
+              <span>Для дома и быта</span>
+            </a>
+          </div>
+          <div class="popular-category">
+            <a href="#" class="popular-category-link" target="_blank">
+              <img
+                src="./images/jacket.png"
+                alt="Жилеты"
+                class="popular-category-image"
+              />
+              <span>Жилеты</span>
+            </a>
+          </div>
+          <div class="popular-category">
+            <a href="#" class="popular-category-link" target="_blank">
+              <img
+                src="./images/trousers.png"
+                alt="Брюки"
+                class="popular-category-image"
+              />
+              <span>Брюки</span>
+            </a>
+          </div>
+          <div class="popular-category">
+            <a href="#" class="popular-category-link" target="_blank">
+              <img
+                src="./images/trousers.png"
+                alt="Брюки"
+                class="popular-category-image"
+              />
+              <span>Брюки</span>
+            </a>
+          </div>
+        </div>
+        <div class="slider-buttons">
+          <button class="slider-btn-prev"></button>
+          <button class="slider-btn-next"></button>
+        </div>
+      </section>
+
+      <section class="section-profitable-offer">
+        <div class="profitable-offer-header">
+          <h2 class="catalog-section-title">
+            Выгодные предложения для наших клиентов
+          </h2>
+          <div class="button-block">
+            <button class="profitable-offer-category-btn">
+              Новинки сезона
+            </button>
+            <button class="profitable-offer-category-btn">Распродажа</button>
+            <button class="profitable-offer-category-btn">
+              Специальные цены
+            </button>
+          </div>
+        </div>
+        <div class="profitable-offer-block">
+          <div class="profitable-offer">
+            <a href="#" class="profitable-offer-product" target="_blank">
+              <img
+                src="./images/product1.png"
+                alt="Костюм"
+                class="profitable-offer-image"
+              />
+              <span class="article">Арт.: 00000000</span>
+              <h3 class="offer-product-title">
+                Костюм Общевойсковой рип-стоп мох зелёный
+              </h3>
+              <p class="offer-product-text">
+                Модель Общевойскового костюма создана на основе армейской
+                полевой
+              </p>
+            </a>
+            <div class="offer-product-wrapper-availability">
+              <div class="offer-product-wrapper-count">
+                <span class="available">В наличии</span>
+                <span class="available-text"
+                  >Доступно: <span class="available-count">Много</span></span
+                >
+              </div>
+              <div class="offer-product-wrapper-shop">
+                <span class="offer-product-shop">ТЦ Поляна</span>
+                <span class="offer-product-shop">ТЦ Берёзка</span>
+              </div>
+            </div>
+            <div class="offer-product-footer">
+              <div class="offer-product-wrapper-price">
+                <div class="old-price">
+                  <span class="old-price-text">Цена без скидки</span>
+                  <span class="old-price-number">25 340 &#8381;</span>
+                </div>
+                <div class="new-price">
+                  <span class="new-price-text">Цена с уч. скидки</span>
+                  <span class="new-price-number">23 000 &#8381;</span>
+                </div>
+              </div>
+              <button class="addcart-btn"></button>
+            </div>
+          </div>
+
+          <div class="profitable-offer">
+            <a href="#" class="profitable-offer-product" target="_blank">
+              <img
+                src="./images/product2.png"
+                alt="Костюм"
+                class="profitable-offer-image"
+              />
+              <span class="article">Арт.: 00000000</span>
+              <h3 class="offer-product-title">Костюм Combat черный питон</h3>
+              <p class="offer-product-text">
+                Модель Общевойскового костюма создана на основе армейской
+                полевой
+              </p>
+            </a>
+            <div class="offer-product-wrapper-availability">
+              <div class="offer-product-wrapper-count">
+                <span class="available">В наличии</span>
+                <span class="available-text"
+                  >Доступно:
+                  <span class="available-count-little">Мало</span></span
+                >
+              </div>
+              <div class="offer-product-wrapper-shop">
+                <span class="offer-product-shop">ТЦ Поляна</span>
+                <span class="offer-product-shop">ТЦ Берёзка</span>
+              </div>
+            </div>
+            <div class="offer-product-footer">
+              <div class="offer-product-wrapper-price">
+                <div class="old-price">
+                  <span class="old-price-text">Цена без скидки</span>
+                  <span class="old-price-number">25 340 &#8381;</span>
+                </div>
+                <div class="new-price">
+                  <span class="new-price-text">Цена с уч. скидки</span>
+                  <span class="new-price-number">23 000 &#8381;</span>
+                </div>
+              </div>
+              <button class="addcart-btn"></button>
+            </div>
+          </div>
+
+          <div class="profitable-offer">
+            <a href="#" class="profitable-offer-product" target="_blank">
+              <img
+                src="./images/product3.png"
+                alt="Костюм"
+                class="profitable-offer-image"
+              />
+              <span class="article">Арт.: 00000000</span>
+              <h3 class="offer-product-title">
+                Бейсболка Velcro черный камуфляж
+              </h3>
+              <p class="offer-product-text">Бейсболка Velcro черный камуфляж</p>
+            </a>
+            <div class="offer-product-wrapper-availability">
+              <div class="offer-product-wrapper-count">
+                <span class="available">В наличии</span>
+                <span class="available-text"
+                  >Доступно: <span class="available-count">Много</span></span
+                >
+              </div>
+              <div class="offer-product-wrapper-shop">
+                <span class="offer-product-shop">ТЦ Поляна</span>
+                <span class="offer-product-shop">ТЦ Берёзка</span>
+              </div>
+            </div>
+            <div class="offer-product-footer">
+              <div class="offer-product-wrapper-price">
+                <div class="new-price">
+                  <span class="new-price-text">Цена</span>
+                  <span class="new-price-number">500 &#8381;</span>
+                </div>
+              </div>
+              <button class="addcart-btn"></button>
+            </div>
+          </div>
+
+          <div class="profitable-offer">
+            <a href="#" class="profitable-offer-product" target="_blank">
+              <img
+                src="./images/product4.png"
+                alt="Костюм"
+                class="profitable-offer-image"
+              />
+              <span class="article">Арт.: 00000000</span>
+              <h3 class="offer-product-title">Боевая рубаха мультикам</h3>
+              <p class="offer-product-text">
+                Модель Общевойскового костюма создана на основе армейской
+                полевой
+              </p>
+            </a>
+            <div class="offer-product-wrapper-availability">
+              <div class="offer-product-wrapper-count">
+                <span class="not-available">Под заказ</span>
+                <span class="available-text"
+                  >Доступно:
+                  <span class="not-available-count">Под заказ</span></span
+                >
+              </div>
+              <div class="offer-product-wrapper-shop">
+                <span class="offer-product-shop">ТЦ Поляна</span>
+                <span class="offer-product-shop">ТЦ Берёзка</span>
+              </div>
+            </div>
+            <div class="offer-product-footer">
+              <div class="offer-product-wrapper-price">
+                <div class="old-price">
+                  <span class="old-price-text">Цена без скидки</span>
+                  <span class="old-price-number">25 340 &#8381;</span>
+                </div>
+                <div class="new-price">
+                  <span class="new-price-text">Цена с уч. скидки</span>
+                  <span class="new-price-number">23 000 &#8381;</span>
+                </div>
+              </div>
+              <button class="addcart-btn"></button>
+            </div>
+          </div>
+
+          <div class="profitable-offer">
+            <a href="#" class="profitable-offer-product" target="_blank">
+              <img
+                src="./images/product5.png"
+                alt="Костюм"
+                class="profitable-offer-image"
+              />
+              <span class="article">Арт.: 00000000</span>
+              <h3 class="offer-product-title">
+                Берцы «СКАТ М-1402 О1» в цвете «Олива». И вновь модель пред...
+              </h3>
+              <p class="offer-product-text">
+                Модель Общевойскового костюма создана на основе армейской
+                полевой
+              </p>
+            </a>
+            <div class="offer-product-wrapper-availability">
+              <div class="offer-product-wrapper-count">
+                <span class="available">В наличии</span>
+                <span class="available-text"
+                  >Доступно: <span class="available-count">Много</span></span
+                >
+              </div>
+              <div class="offer-product-wrapper-shop">
+                <span class="offer-product-shop">ТЦ Поляна</span>
+                <span class="offer-product-shop">ТЦ Берёзка</span>
+              </div>
+            </div>
+            <div class="offer-product-footer">
+              <div class="offer-product-wrapper-price">
+                <div class="old-price">
+                  <span class="old-price-text">Цена без скидки</span>
+                  <span class="old-price-number">25 340 &#8381;</span>
+                </div>
+                <div class="new-price">
+                  <span class="new-price-text">Цена с уч. скидки</span>
+                  <span class="new-price-number">23 000 &#8381;</span>
+                </div>
+              </div>
+              <button class="addcart-btn"></button>
+            </div>
+          </div>
+
+          <div class="profitable-offer">
+            <a href="#" class="profitable-offer-product" target="_blank">
+              <img
+                src="./images/product5.png"
+                alt="Костюм"
+                class="profitable-offer-image"
+              />
+              <span class="article">Арт.: 00000000</span>
+              <h3 class="offer-product-title">
+                Берцы «СКАТ М-1402 О1» в цвете «Олива». И вновь модель пред...
+              </h3>
+              <p class="offer-product-text">
+                Модель Общевойскового костюма создана на основе армейской
+                полевой
+              </p>
+            </a>
+            <div class="offer-product-wrapper-availability">
+              <div class="offer-product-wrapper-count">
+                <span class="available">В наличии</span>
+                <span class="available-text"
+                  >Доступно: <span class="available-count">Много</span></span
+                >
+              </div>
+              <div class="offer-product-wrapper-shop">
+                <span class="offer-product-shop">ТЦ Поляна</span>
+                <span class="offer-product-shop">ТЦ Берёзка</span>
+              </div>
+            </div>
+            <div class="offer-product-footer">
+              <div class="offer-product-wrapper-price">
+                <div class="old-price">
+                  <span class="old-price-text">Цена без скидки</span>
+                  <span class="old-price-number">25 340 &#8381;</span>
+                </div>
+                <div class="new-price">
+                  <span class="new-price-text">Цена с уч. скидки</span>
+                  <span class="new-price-number">23 000 &#8381;</span>
+                </div>
+              </div>
+              <button class="addcart-btn"></button>
+            </div>
+          </div>
+        </div>
+        <div class="slider-buttons">
+          <button class="slider-btn-prev"></button>
+          <button class="slider-btn-next"></button>
+        </div>
+      </section>
+
+      <section class="section-clients">
+        <div class="section-clients-content">
+          <h2 class="section-clients-content-title">
+            комплектация
+            <span class="clients-content-title-bold">для любой сферы</span>
+          </h2>
+          <div class="clients">
+            <div class="client">
+              <h3 class="client-title">Для охоты и рыбалки</h3>
+              <p class="client-text">надёжная экипировка для любой погоды</p>
+              <a href="#" class="client-link arrow-right" target="_blank"
+                >Перейти в каталог</a
+              >
+            </div>
+
+            <div class="client">
+              <h3 class="client-title">Для охранных предприятий</h3>
+              <p class="client-text">профессиональная экипировка ЧОП</p>
+              <a href="#" class="client-link arrow-right" target="_blank"
+                >Перейти в каталог</a
+              >
+            </div>
+
+            <div class="client">
+              <h3 class="client-title">Для рабочих специальностей</h3>
+              <p class="client-text">спецодежда и защитная экипировка</p>
+              <a href="#" class="client-link arrow-right" target="_blank"
+                >Перейти в каталог</a
+              >
+            </div>
+
+            <div class="client">
+              <h3 class="client-title">Для военнослужащих</h3>
+              <p class="client-text">
+                полный комплект уставной формы и снаряжения
+              </p>
+              <a href="#" class="client-link arrow-right" target="_blank"
+                >Перейти в каталог</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-company">
+        <div class="about-company-wrapper">
+          <div class="about-company-content">
+            <a href="#"
+              ><img src="./images/text-logo.svg" alt="Логотип компании"
+            /></a>
+            <p class="about-company-text">
+              это более 1000 наименований военной формы, спецодежды и снаряжения
+              в наличии.
+            </p>
+            <p class="about-company-subtext">
+              Магазин «Армия 25» – это более 1000 наименований военной формы,
+              спецодежды и снаряжения в наличии.
+              <span class="about-company-subtext-bold"
+                >Мы работаем напрямую с производителями, что позволяет
+                предлагать качественные товары по доступным ценам.</span
+              >
+            </p>
+            <p class="about-company-subtext">
+              Наша команда профессионалов поможет подобрать экипировку под любые
+              задачи — от военной службы до активного отдыха. Мы гарантируем
+              качество каждого товара и обеспечиваем оперативную доставку по
+              всей России из наших магазинов во Владивостоке и Артёме.
+            </p>
+            <a href="#" class="about-company-link">Подробнее о нас</a>
+          </div>
+          <div class="about-company-image-wrapper">
+
+            <div class="about-company-slider">
+              <div class="about-company-slide">
+                <img src="./images/about-company-1.png" alt="Фото ассортимента продукции компании" class="about-company-image" />
+                <span class="about-company-image-subtitle">г. Артём ТЦ Поляна</span>
+              </div>
+              <div class="about-company-slide">
+                <img src="./images/about-company-2.png" alt="Фото ассортимента продукции компании" class="about-company-image" />
+                <span class="about-company-image-subtitle">г. Артём ТЦ Поляна</span>
+              </div>
+              <div class="about-company-slide">
+                <img src="./images/about-company-3.png" alt="Фото ассортимента продукции компании" class="about-company-image" />
+                <span class="about-company-image-subtitle">г. Артём ТЦ Поляна</span>
+              </div>
+              <div class="about-company-slide">
+                <img src="./images/about-company-4.png" alt="Фото ассортимента продукции компании" class="about-company-image" />
+                <span class="about-company-image-subtitle">г. Владивосток ТЦ Берёзка</span>
+              </div>
+              <div class="about-company-slide">
+                <img src="./images/about-company-5.png" alt="Фото ассортимента продукции компании" class="about-company-image" />
+                <span class="about-company-image-subtitle">г. Владивосток ТЦ Берёзка</span>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </section>
+      <section class="section-advantages">
+        <div class="section-advantages-content">
+          <h2 class="section-advantages-content-title">
+            3 причины выбрать нас
+          </h2>
+          <div class="advantages">
+            <div class="advantage advantage-id1">
+              <h3 class="advantage-title">Быстрая доставка по всей стране</h3>
+              <p class="advantage-text">
+                — получаем заказы от Калининграда до Владивостока!
+              </p>
+            </div>
+
+            <div class="advantage advantage-id2">
+              <h3 class="advantage-title">Цены, которые радуют</h3>
+              <p class="advantage-text">— экономия без компромиссов!</p>
+            </div>
+
+            <div class="advantage advantage-id3">
+              <h3 class="advantage-title">Ассортимент на любой вкус</h3>
+              <p class="advantage-text">— тысячи позиций ждут вас!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <a href="#"><img src="./images/logo-footer.svg" alt="Логотип" /></a>
+          <div class="footer-stores">
+            <article class="store-info">
+              <address>
+                <p class="store-info-address">г. Владивосток, ТЦ Берёзка</p>
+                <p class="store-info-subaddress">
+                  ул. Русская, 16 ст9 (1 этаж, бутик к-11)
+                </p>
+              </address>
+              <p class="working-hours">Ежедневно с 10:00 до 18:00</p>
+              <p class="store-info-phone">Телефон магазина г. Владивосток:</p>
+              <a href="tel:+79140773042" class="store-info-number"
+                >+7 914 077-30-42</a
+              >
+            </article>
+            <article class="store-info">
+              <address>
+                <p class="store-info-address">г. Артём, ТЦ Поляна</p>
+                <p class="store-info-subaddress">
+                  ул. Кирова, 9/5 (1 этаж, 103 бутик)
+                </p>
+              </address>
+              <p class="working-hours">Ежедневно с 10:00 до 18:00</p>
+              <p class="store-info-phone">Телефон магазина г. Артём:</p>
+              <a href="tel:+79140678334" class="store-info-number"
+                >+7 914 067-83-34</a
+              >
+            </article>
+          </div>
+        </div>
+        <div class="footer-selection">
+          <div class="footer-categories">
+            <ul class="footer-categories-list">
+              <li class="footer-category-item">
+                <a href="#" class="footer-category-link" target="_blank"
+                  >Брюки</a
+                >
+              </li>
+              <li class="footer-category-item">
+                <a href="#" class="footer-category-link" target="_blank"
+                  >Военная форма</a
+                >
+              </li>
+              <li class="footer-category-item">
+                <a href="#" class="footer-category-link" target="_blank"
+                  >Головные уборы</a
+                >
+              </li>
+              <li class="footer-category-item">
+                <a href="#" class="footer-category-link" target="_blank"
+                  >Для дома и быта</a
+                >
+              </li>
+              <li class="footer-category-item">
+                <a href="#" class="footer-category-link" target="_blank"
+                  >Жилеты</a
+                >
+              </li>
+              <li class="footer-category-item">
+                <a href="#" class="footer-category-link" target="_blank"
+                  >Костюмы для охоты и рыбалки</a
+                >
+              </li>
+              <li class="footer-category-item">
+                <a href="#" class="footer-category-link" target="_blank"
+                  >Куртки</a
+                >
+              </li>
+              <li class="footer-category-item">
+                <a href="#" class="footer-category-link" target="_blank"
+                  >Обувь</a
+                >
+              </li>
+              <li class="footer-category-item">
+                <a href="#" class="footer-category-link" target="_blank"
+                  >Ремни</a
+                >
+              </li>
+              <li class="footer-category-item">
+                <a href="#" class="footer-category-link" target="_blank"
+                  >Свитера</a
+                >
+              </li>
+              <li class="footer-category-item">
+                <a href="#" class="footer-category-link" target="_blank"
+                  >Снаряжение</a
+                >
+              </li>
+              <li class="footer-category-item">
+                <a href="#" class="footer-category-link" target="_blank"
+                  >Спецодежда</a
+                >
+              </li>
+              <li class="footer-category-item">
+                <a href="#" class="footer-category-link" target="_blank"
+                  >Средства индивидуальной защиты</a
+                >
+              </li>
+              <li class="footer-category-item">
+                <a href="#" class="footer-category-link" target="_blank"
+                  >Тактическая форма</a
+                >
+              </li>
+              <li class="footer-category-item">
+                <a href="#" class="footer-category-link" target="_blank"
+                  >Термобелье</a
+                >
+              </li>
+              <li class="footer-category-item">
+                <a href="#" class="footer-category-link" target="_blank"
+                  >Трикотаж</a
+                >
+              </li>
+              <li class="footer-category-item">
+                <a href="#" class="view-all-btn" target="_blank"
+                  >Смотреть все</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-contact-form">
+            <h3 class="footer-contact-form-title">Нужна помощь в выборе?</h3>
+            <p class="footer-contact-form-text">
+              Оставьте заявку и мы вам поможем
+            </p>
+            <button type="submit" class="contact-form-btn">
+              Оставить заявку
+            </button>
+          </div>
+        </div>
+        <div class="footer-menu">
+          <ul class="footer-menu-list">
+            <li>
+              <a href="#" class="footer-menu-link" target="_blank">Каталог</a>
+            </li>
+            <li>
+              <a href="#" class="footer-menu-link" target="_blank"
+                >О компании</a
+              >
+            </li>
+            <li>
+              <a href="#" class="footer-menu-link" target="_blank">Доставка</a>
+            </li>
+            <li>
+              <a href="#" class="footer-menu-link" target="_blank"
+                >Гарантии и возврат</a
+              >
+            </li>
+            <li>
+              <a href="#" class="footer-menu-link" target="_blank"
+                >Новости и статьи</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-bottom-wrapper">
+            <div class="footer-networks">
+              <h4 class="footer-networks-title">Наши социальные сети</h4>
+              <div class="footer-networks-icons">
+                <a href="#" target="_blank"
+                  ><img src="./images/vk-footer-icon.svg" alt="ВКонтакте"
+                /></a>
+                <a href="#" target="_blank"
+                  ><img src="./images/ok-footer-icon.svg" alt="Одноклассники"
+                /></a>
+              </div>
+            </div>
+            <div class="footer-linkmap">
+              <h4 class="footer-linkmap-title">Наши магазины</h4>
+              <a href="#" target="_blank"
+                ><img
+                  src="./images/linkmap-icon.svg"
+                  alt="Иконка перехода в магазины на карте"
+              /></a>
+            </div>
+          </div>
+          <div class="footer-bottom-wrapper">
+            <div class="legal-documents">
+              <a href="#" class="legal-documents-link" target="_blank"
+                >Юр. наименование компании</a
+              >
+              <a href="#" class="legal-documents-link" target="_blank"
+                >Политика конфиденциальности</a
+              >
+            </div>
+            <div class="impulse-logo">
+              <p class="impulse-logo-text">Разработка сайта</p>
+              <a href="https://impulse-marketing.ru/" target="_blank"
+                ><img
+                  src="./images/impulse-logo.svg"
+                  alt="Логотип разработчика сайта"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
