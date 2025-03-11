@@ -118,6 +118,7 @@ p {
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
+  padding-left: 0;
 }
 
 .header-navigation-buttons {
@@ -142,7 +143,7 @@ p {
   font-family: "Roboto", serif;
   word-spacing: 15px;
   position: absolute;
-  bottom: 50px;
+  bottom: 64px;
 }
 
 .header-contacts-number {
@@ -160,7 +161,7 @@ p {
   max-width: 706px;
   position: absolute;
   left: 50%;
-  bottom: 55px;
+  bottom: 64px;
   transform: translateX(-50%);
 }
 
@@ -389,18 +390,15 @@ p {
   position: relative;
 }
 
-/* Скрываем стандартные input */
 .radio-group input[type="radio"],
 .policy-label input[type="checkbox"] {
   appearance: none;
-  position: absolute;
-  width: 0;
-  height: 0;
-  overflow: hidden;
+  position: relative;
+  visibility: hidden; /* Скрываем стандартные элементы, оставляем интерактивность */
 }
 
 /* Кастомные радиокнопки */
-.radio-group label::before {
+.radio-group label span::before {
   content: "";
   display: inline-block;
   width: 20px;
@@ -413,7 +411,7 @@ p {
 
 /* Активная радиокнопка */
 .radio-group input[type="radio"]:checked + span::before {
-  background-image: url("./radio-checked.svg"); /* Фон для активного */
+  background-image: url("./images/radio-on-white.svg"); /* Фон для активного */
 }
 
 /* Чекбокс */
@@ -430,8 +428,7 @@ p {
   margin-top: 8px;
 }
 
-/* Кастомный чекбокс */
-.policy-label::before {
+.policy-label span::before {
   content: "";
   display: inline-block;
   width: 20px;
@@ -444,9 +441,8 @@ p {
 
 /* Активный чекбокс */
 .policy-label input[type="checkbox"]:checked + span::before {
-  background-image: url("checkbox-checked.svg"); /* Фон для активного */
+  background-image: url("./images/checkbox-on-white.svg"); /* Фон для активного */
 }
-
 
 .popular-categories {
   display: flex;
@@ -727,6 +723,7 @@ p {
   padding: 3px 6px 3px 18px;
   color: #FFFFFF;
   background-image: url(./images/available-sub.svg);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   font-size: 12px;
@@ -750,6 +747,7 @@ p {
 .not-available {
   color: #202020;
   background-image: url(./images/not-available-sub.svg);
+  background-size: cover;
   background-repeat: no-repeat;
   font-size: 12px;
   font-weight: 400;
@@ -1335,8 +1333,9 @@ p {
 
 /* Планшетная версия */
 @media (max-width: 1024px) {
-  body {
-    
+
+  .link-about-company {
+    display: none;
   }
 
   .header-textblock-title {
@@ -1347,14 +1346,211 @@ p {
     font-size: 20px;
   }
 
-  
+  .offers {
+    padding: 40px;
+  }
 
+  .offers-container {
+    flex-wrap: wrap;
+    min-height: 718px;
+  }
+
+  .offers-slider-img {
+    height: 403px;
+  }
+
+  .form-container {
+    width: 100%;
+    height: min-content;
+  }
+
+  .order-input-wrapper {
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+  }
+
+  .form-wrapper {
+    width: 55%;
+  }
+
+  .form-text {
+    margin-top: 0;
+    height: 48px;
+  }
+
+  .popular-categories {
+    margin: 40px;
+  }
+
+  .section-profitable-offer {
+    padding: 0 40px;
+  }
+
+  .section-clients-content {
+    padding: 120px 40px 161px 40px;
+  }
+
+  .section-clients-content-title {
+    font-size: 56px;
+  }
+
+  .client-title {
+    font-size: 20px;
+  }
+
+  .client-text {
+    font-size: 16px;
+  }
+
+  .about-company-wrapper {
+    gap: 16px;
+  }
+
+  .about-company-text {
+    font-size: 24px;
+  }
+
+  .about-company-logo {
+    width: 223px;
+  }
+
+  .section-advantages {
+    margin-bottom: 90px;
+  }
+
+  .section-advantages-content {
+    padding: 60px 40px;
+  }
+
+  .section-advantages-content-title {
+    font-size: 56px;
+  }
+
+  .advantage-title {
+    font-size: 20px;
+  }
+
+  .advantage-text {
+    font-size: 16px;
+  }
+
+  .footer {
+    padding: 50px 40px 16px;
+  }
+
+  .footer-section {
+    gap: 119px;
+  }
+
+  .footer-stores {
+    gap: 63px;
+  }
+
+  .footer-selection {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .footer-categories {
+    width: 100%;
+  }
+
+  .footer-contact-form {
+    display: flex;
+    gap: 56px;
+    border-left: none;
+    padding: 24px 0 0;
+    width: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    align-items: center;
+  }
+
+  .contact-form-btn {
+    width: min-content;
+    white-space: nowrap;
+    padding: 16px 22px;
+    height: min-content;
+  }
+
+  .footer-menu-link {
+    font-size: 16px;
+  }
+
+  .legal-documents-link {
+    font-size: 12px;
+  }
 }
 
 /* Мобильная версия */
 @media (max-width: 450px) {
   body {
-    
+    max-width: 450px;
+    overflow: hidden;
+  }
+
+  .header {
+    background-image: url(./images/header-bg450.png);
+  }
+
+  .container {
+    margin: 0 16px 0 16px;
+  }
+
+  .header-navigation-logoblock{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .header-navigation-list {
+    display: none;
+  }
+
+  .header-navigation-catalog {
+    padding: 14px 16px 14px 48px;
+    font-size: 14px;
+    width: 116px;
+    background-size: 24px;
+  }
+
+  .header-navigation-buttons {
+    align-items: end;
+  }
+
+  .btn-busket {
+    padding-bottom: 7px;
+  }
+
+  .header-contacts {
+    text-align: right;
+    bottom: unset;
+    top: 10px;
+    right: 16px;
+  }
+
+  .header-contacts-number {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .header-address {
+    font-size: 14px;
+  }
+
+  .header-textblock {
+    transform: unset;
+    left: unset;
+    bottom: 51px;
+  }
+
+  .header-textblock-title {
+    font-size: 38px;
+    line-height: 120%;
+  }
+
+  .header-textblock-text {
+    font-size: 18px;
+    font-weight: 600;
   }
 }
 

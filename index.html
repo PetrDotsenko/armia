@@ -74,7 +74,7 @@
               </ul>
             </div>
             <ul class="header-navigation-list">
-              <li>
+              <li class="link-about-company">
                 <a href="#" class="header-navigation-link" target="_blank"
                   >О компании</a
                 >
@@ -102,7 +102,7 @@
               </button>
             </li>
             <li>
-              <button class="header-navigation-button">
+              <button class="header-navigation-button btn-busket">
                 <img src="./images/basket-icon.svg" alt="Корзина" />
               </button>
             </li>
@@ -168,6 +168,7 @@
               комплект
             </p>
             <form class="order-form">
+              <div class="order-input-wrapper">
               <div class="form-wrapper">
                 <input
                   type="text"
@@ -188,40 +189,30 @@
                 name="comment"
                 placeholder="Комментарий к заказу"
                 class="form-text"
-              ></textarea>
+              ></textarea></div>
+
               <div class="radio-group">
                 <label>
                   <input type="radio" name="contact_method" value="whatsapp" />
-                  <span>Связаться в WhatsApp</span>
+                  <span></span> <!-- Пустой span для кастомной стилизации -->
+                  Связаться в WhatsApp
                 </label>
                 <label>
-                  <input
-                    type="radio"
-                    name="contact_method"
-                    value="call"
-                    checked
-                  />
-                  <span>Позвонить</span>
+                  <input type="radio" name="contact_method" value="call" checked />
+                  <span></span> <!-- Пустой span для кастомной стилизации -->
+                  Позвонить
                 </label>
               </div>
-
+              
               <button type="submit" id="submit-button" class="contact-form-btn">
                 Оставить заявку
               </button>
-
+              
               <label class="policy-label">
-                <input
-                  type="checkbox"
-                  name="policy"
-                  id="policy-checkbox"
-                  required
-                />
-                <span
-                  >Нажимая на кнопку «Отправить заявку», вы соглашаетесь с
-                  <a href="#" class="policy-label-link"
-                    >политикой конфиденциальности</a
-                  >
-                </span>
+                <input type="checkbox" name="policy" id="policy-checkbox" required />
+                <span></span> 
+                <div> Нажимая на кнопку «Отправить заявку», вы соглашаетесь с
+                <a href="#" class="policy-label-link">политикой конфиденциальности</a></div>
               </label>
             </form>
           </div>
@@ -628,7 +619,7 @@
         <div class="about-company-wrapper">
           <div class="about-company-content">
             <a href="#"
-              ><img src="./images/text-logo.svg" alt="Логотип компании"
+              ><img src="./images/text-logo.svg" alt="Логотип компании" class="about-company-logo"
             /></a>
             <p class="about-company-text">
               это более 1000 наименований военной формы, спецодежды и снаряжения
@@ -828,10 +819,12 @@
             </ul>
           </div>
           <div class="footer-contact-form">
+            <div class="footer-form-text">
             <h3 class="footer-contact-form-title">Нужна помощь в выборе?</h3>
             <p class="footer-contact-form-text">
               Оставьте заявку и мы вам поможем
             </p>
+          </div>
             <button type="submit" class="contact-form-btn">
               Оставить заявку
             </button>

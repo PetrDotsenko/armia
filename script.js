@@ -88,11 +88,11 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentIndex = 0;
 
     function getVisibleCards() {
-      if (window.innerWidth >= 1440) {
+      if (window.innerWidth >= 1441) {
         return 6;
-      } else if (window.innerWidth >= 1024) {
+      } else if (window.innerWidth >= 1025) {
         return 5;
-      } else if (window.innerWidth >= 450) {
+      } else if (window.innerWidth >= 451) {
         return 4;
       } else {
         return 3;
